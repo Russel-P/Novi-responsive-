@@ -11,25 +11,73 @@ Table of Contents:
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: 'Dosis', sans-serif;
+    background-color: #F9C48B;
+    color: #260803;
     font-weight: 400;
+}
+
+img {
+    width: 100%;
 }
 
 /*////////////////////////
     2. Typography
 ////////////////////////*/
 
+h2 {
+    margin: 0 0 .5rem 0;
+}
 
+p {
+    margin: .75rem 0;
+}
 
 /*////////////////////////
     3. Areas
 ////////////////////////*/
-
+.information {
+    background-color: #FDEFEC;
+  box-shadow: 0 .0625rem .25rem rgba(0, 0, 0, 0.16);
+    padding: 2rem;
+    margin: 1.5rem;
+    border-radius: .5rem;
+}
 
 
 
 /*////////////////////////
     2. Media Queries
 ////////////////////////*/
+
+/* Stijlen voor tablets */
+@media (min-width: 768px) {
+    html {
+        font-size: 16px; /* Grotere font-size voor tablets */
+    }
+    body {
+        background-color: orange; /* Oranje voor tablets */
+    }
+}
+
+/* Stijlen voor desktops */
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px; /* Nog grotere font-size voor desktops */
+    }
+    body {
+        background-color: red; /* Rood voor desktops */
+    }
+}
+
